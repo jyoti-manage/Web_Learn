@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="../static/style_side_bar.css">  
+
+    style
+        include ../static/style.css
+    style
+        include ../static/contact.css         
+    <title>Marble</title>
+    <script src="../work.js"></script>
+</head>
+<body>
+    <header>
+
+        <div class="head">
+            <img class="logo" src="/static/images.jpg" alt="">
+            <h1>Marbles</h1>
+        </div>
+        
+
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+
+        <div class="w3-teal" id="w3-hide">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        </div> 
+
+    </header>
+    
+    <nav class="navbar">
+        <a href="/" class="anchor">Tiles</a>
+        <a href="/" class="anchor">Marbles</a>
+        <a href="/contact" class="anchor">Contact Us</a>
+        <a href="/" class="anchor">Visit Us</a>
+        <a href="/" class="anchor">Fenesta</a>
+        <a href="/" class="anchor">Sale</a>
+    </nav>
+   
+    
+    <img class="headimg" src="../static/enquiry.jpg" alt="">
+
+    <form action="" method="post" class="form">
+        <label class ="label" for="fname">First name:</label><br>
+        <input class="input" type="text" id="fname" name="fname"  ><br>
+        <label class ="label" for="lname">Last name:</label><br>
+        <input class="input" type="text" id="lname" name="lname"><br>
+        <label class ="label" for="email">Email:</label><br>
+        <input class="input" type="email" id="email" name="email" ><br>
+        <label class ="label" for="phone">Phone Number:</label><br>
+        <input class="input" type="number" id="phone" name="phone" value=""><br>
+        <label class ="label" for="lname">Message:</label><br>
+        <textarea class="textarea" name="message" id="message"></textarea><br><br>
+
+        <input type="submit" class="btn" value="Submit">
+
+
+    </form>
+
+
+
+    
+    <footer class="foot"> 
+        <div class="f">Address: 110/A/3 Maharaja Nanda Kumar Road, Mushidabad (W.B)</div> | 
+        <div><button class="rate">Rate Us</button></div>|
+        <div class="f">&copy;2021</div>
+
+    </footer>
+    
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../static/work.js"></script>
+
+   
+    
+</body>
+</html>

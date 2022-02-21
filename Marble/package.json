@@ -1,0 +1,17 @@
+{
+  "name": "marble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "flickity": "^2.3.0",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}

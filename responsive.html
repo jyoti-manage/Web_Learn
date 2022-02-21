@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVENESS</title>
+    <style>
+        .first
+          {
+              background-color: burlywood;
+               
+          }
+               
+          
+          .secand
+          {
+              background-color: rgb(233, 140, 18);
+           
+          }
+
+          .third
+          {
+              background-color: rgb(187, 179, 169);
+              
+          }
+          .forth
+          {
+              background-color: rgb(121, 81, 29);
+              
+          }
+          .box{
+              height: 150px;
+              text-align: center;
+              font-style: italic;
+              font-size:25px;
+              color:rgb(19, 1, 1);
+              
+          }
+          p:hover{
+              color:indigo;
+          }
+          @media screen and (min-width: 1100px){
+              .box{
+                float: left;
+                width: 25%;}
+              }
+           @media screen and (max-width:1100px ) and (min-width:500px){
+               
+            .box{
+                   
+                   width:50%;
+                 
+                   float:left;
+
+               }
+             
+              
+           }   
+         
+      
+          
+    </style>
+</head>
+<body>
+  <h1>What do you enjoy doing?</h1>
+
+    <div class="box first">
+        <p >Shopping  <input type="radio"></p>
+    </div>
+    <div class="secand box">
+        <p>Sleep at home  <input type="radio"></p>
+    </div>
+
+
+    <div class="third box">
+        <p>Visit a place  <input type="radio"></p>
+    </div>
+    <div class="forth box">
+        <p>Going in Concert  <input type="radio"></p>
+    </div>
+
+</body>
+</html>

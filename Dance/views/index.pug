@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+    title DANCE ACADEMY  
+  body
+    nav#navbar
+        ul
+             div#logo 
+                 img(src="/static/logo.jpg")
+             li #[a(href='/')  Home ]
+             li #[a(href='/')  About ]
+             li #[a(href='/')  Contact Us]
+             li #[a(href='/')  Services ]
+             li #[a(href='/')  Class Info]
+    section#introSection 
+        div  DANCE IF YOU CAN 
+        div.s Dance with your heart open
+    
+    section#missionSection 
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection
+            div.card-box
+               div.card-img 
+                    img(src="/static/logo.jpg")
+               div.content
+                    p Content    
+        div.card
+            h3 Dance Perfection
+            div.card-box
+               div.card-img 
+                    img(src="/static/logo.jpg")
+               div.content
+                    p Content      
+        div.card
+            h3 Dance Perfection
+            div.card-box
+               div.card-img 
+                    img(src="/static/logo.jpg")
+               div.content
+                    p Content           
+
+    section#sponserSection 
+        h2 Our Sponsers
+        div.spo
+              div#sponsers 
+                     img(src="/static/dance.jpg", alt="",class="logo")
+
+              div#sponsers 
+                     img(src="/static/dance.jpg", alt="",class="logo")
+
+
+    footer#footer 
+        |   © CopyRight                
+    script
+      include ../static/index.js

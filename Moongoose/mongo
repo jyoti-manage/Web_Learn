@@ -1,0 +1,58 @@
+//document oriented (BSON) row==document  table==>collections
+// mongo -- console shell and mondgod -- host process
+// mongod
+// another command prompt--  mongo
+
+// in mongo--
+// db ==> test(default db)
+// use harry ==>(make and use harry db)
+// show dbs
+// show collections
+// db.text==> harry.text(bd has a text table or collection)
+// db.text.insert({"insert":1})
+
+use harryKart
+
+show dbs
+
+show collections  // (in selected db)
+// items is a collection in that db is created if doesnot exist
+db.items.insertOne({name:"jyoti",price:200})
+db.items.insertMany({name:"jyoti",price:200},{name:"juta",price:20})
+
+db.items.find()(paste in shell by right click)
+// get all table content
+
+db.items.find({name:"Samsung"})
+
+db.items.find({rating:{$gte: 2}})  (greater or equal to)
+                        gt            (greater than gt)/ lt /lte
+
+// {} is object     // $opartor:                                
+db.items.find({rating:{$gte: 2},name:"Samsung"})    // and   
+
+//or 
+// db.items.find({
+    $or:[{rating:3.5},     {price:{$gt: 1}}]
+    })
+
+
+// db.items.find({rating:{$gt: 3.5}},{rating:1})    // only ratings are show as rating =1
+
+// delete
+db.items.deleteOne({price:22000})
+    // delete 1st matching document in case of multi-match 
+db.items.deleteOne({price:22000})
+    // delete all matching documents in case of multi-match    
+
+db.items.updateOne({name:"Samsam"},{$set:{price:2}})
+  // update the 1st diocument
+
+db.items.updateMany({name:"Samsam"},{$set:{price:2, rating:1}})  
+  set price=2 and rating=1 for all documents having name:"Samsam"
+
+
+// MONGOOSE
+mongodb is use in nodejs through MONGOOSE
+// Compass
+replace the mongo shell without coding  

@@ -1,0 +1,49 @@
+extends base.pug
+//- fill the base.pug like scripts,style etc 
+
+block scripts
+      script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css  
+
+
+block content 
+    
+    section#introSection 
+        div  DANCE IF YOU CAN 
+        div.s Dance with your heart open
+    
+    section#missionSection 
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection
+            div.card-box
+               div.card-img 
+                    img(src="/static/logo.jpg")
+               div.content
+                    p Content    
+        div.card
+            h3 Dance Perfection
+            div.card-box
+               div.card-img 
+                    img(src="/static/logo.jpg")
+               div.content
+                    p Content      
+        div.card
+            h3 Dance Perfection
+            div.card-box
+               div.card-img 
+                    img(src="/static/logo.jpg")
+               div.content
+                    p Content           
+
+    section#sponserSection 
+        h2 Our Sponsers
+        div.spo
+              div#sponsers 
+                     img(src="/static/dance.jpg", alt="",class="logo")
+
+              div#sponsers 
+                     img(src="/static/dance.jpg", alt="",class="logo")

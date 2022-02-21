@@ -1,0 +1,38 @@
+.w3-sidebar{
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    z-index: 30;
+   
+    
+
+}
+.w3-bar-item{
+    padding: 10px;
+    text-align: center;
+
+}
+
+.w3-teal{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 40px;
+    border-radius: 3px;
+    color: blanchedalmond;
+    margin: 0px;
+    
+
+}
+
+.w3-button{
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(8, 8, 66);
+    border: 0px;
+}
+
+

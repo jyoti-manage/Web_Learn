@@ -1,0 +1,73 @@
+.house
+{
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    justify-content: space-between;
+  
+}
+.wall{
+    background-color:rgba(189, 67, 19, 0.89);
+    border-radius: 5px;
+    width: 33.3%;
+    color: white;
+    padding: 5px;
+    margin: 4px;
+   
+}
+.grid1{
+    display: flex;
+    flex-direction: row;
+}
+.grid2{
+    display: flex;
+    flex-direction: row;
+}
+.grid3{
+    display: flex;
+    flex-direction: row;
+}
+.brick{
+    background-color: rgb(245, 239, 237);
+    color: rgba(189, 67, 19, 0.89);
+    margin: 2px;
+}
+.brick1{
+    width: 33.3%;
+    height: 40px;
+    border-radius: 5px;
+}
+.brick2{
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+}
+.brick3{
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+}
+.wall1{
+    background-color:rgba(189, 67, 19, 0.89);
+    border-radius: 5px;
+    color: white;
+    width: 25%;
+    padding: 5px;
+    margin: 4px;
+}
+.wall2{
+    background-color:rgba(189, 67, 19, 0.89);
+    border-radius: 5px;
+    color: white;
+    width: 20%;
+    padding: 5px;
+    margin: 4px;
+}
+.house2{
+    display: flex;
+    flex-direction: row;
+}
+.house3{
+    display: flex;
+    flex-direction: row;
+}
